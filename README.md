@@ -1,4 +1,9 @@
-# Introduction 
+# Project Status
+
+![pipeline](https://gitlab.com/ezuchetti/terraform-aws-cognito-user-pool/badges/main/pipeline.svg) 
+![Latest Release](https://gitlab.com/ezuchetti/terraform-aws-cognito-user-pool/-/badges/release.svg)
+
+# Introduction
 Module for create Cognito UserPools, Clients, Pool Domain and UI Customization
 
 The original repo is on GitLab! Check here [ezuchetti/terraform-aws-cognito-user-pool](https://gitlab.com/ezuchetti/terraform-aws-cognito-user-pool)
@@ -22,6 +27,6 @@ module "cognito_user_pools" {
   source = "eduzuchetti/cognito-user-pool/aws"
   version = "1.0.0"
 
-  user_pool = {}
+  user_pools = {}
   user_pool_client = {}
 }
